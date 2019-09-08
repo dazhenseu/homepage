@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dazhen&#39;s Blog</title>
+  
+  <subtitle>record,think,share</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-09-08T08:38:37.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>da zhen</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人博客搭建记录</title>
+    <link href="http://yoursite.com/2019/09/08/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2019/09/08/个人博客搭建记录/</id>
+    <published>2019-09-08T08:23:31.000Z</published>
+    <updated>2019-09-08T08:38:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、准备github账号"><a href="#一、准备github账号" class="headerlink" title="一、准备github账号"></a>一、准备github账号</h1><p> 账号略</p><p>注意：如果在访问github或者通过homebrew安装软件是经常卡住，那还需要做两件事</p><p>1）homebrew切换源镜像仓库地址，一般为中科大或者清华的源</p><p>2）修改本机host文件，参考<a href="https://www.cnblogs.com/lenmom/p/9400680.html" target="_blank" rel="noopener">https://www.cnblogs.com/lenmom/p/9400680.html</a></p><h1 id="二、安装nvm，npm-node-js"><a href="#二、安装nvm，npm-node-js" class="headerlink" title="二、安装nvm，npm,node js"></a>二、安装nvm，npm,node js</h1><h2 id="1-nvm安装"><a href="#1-nvm安装" class="headerlink" title="1.nvm安装"></a>1.nvm安装</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</span><br></pre></td></tr></table></figure><p>安装完成新开一个终端后输入 nvm —version检测是否安装成功</p><p>##2.安装nodejs (npm会跟着一起安装)<br>这里安装v8的最新LTS版本<br>nvm install v8.16.1<br>安装完成后输入 node -v  查看node是否安装成功；输入npm -v 查看是否安装成功</p><p>#三、安装hexo</p><p>##1.hexo以及主题安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#新建blog文件夹</span><br><span class="line">mkdir blog</span><br><span class="line">#安装hexo</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">#初始化博客文件夹</span><br><span class="line">hexo init</span><br><span class="line">#新建一篇博客测试下</span><br><span class="line">hexo new test</span><br><span class="line">#本地生成静态文件</span><br><span class="line">hexo g</span><br><span class="line">#选一个牛逼的主题</span><br><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>##2.配置<br>这部分内容可以参考: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br>修改_config.yml 配置文件，将hexo与个人的github关联起来，同时需要安装hexo-deployer-git插件：<br><code>npm install hexo-deployer-git --save</code></p><p>#四、绑定自己的域名<br>1.在source文件夹下建立一个CNAME文件，里面写入你的域名，例如<a href="http://www.dazhen.top" target="_blank" rel="noopener">www.dazhen.top</a></p><p>2.在github的github page设置中，填入自己的域名</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、准备github账号&quot;&gt;&lt;a href=&quot;#一、准备github账号&quot; class=&quot;headerlink&quot; title=&quot;一、准备github账号&quot;&gt;&lt;/a&gt;一、准备github账号&lt;/h1&gt;&lt;p&gt; 账号略&lt;/p&gt;
+&lt;p&gt;注意：如果在访问github或者通过
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/09/08/hello-world/"/>
+    <id>http://yoursite.com/2019/09/08/hello-world/</id>
+    <published>2019-09-08T07:09:50.000Z</published>
+    <updated>2019-09-08T07:09:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
